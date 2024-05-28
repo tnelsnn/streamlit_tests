@@ -40,7 +40,7 @@ with st.sidebar:
 
     def clear_chat_history():
         st.session_state.messages = [{"role": "assistant", "content": "How may I assist you today?"}]
-    st.sidebar.button('Clear Chat History' on_click = clear_chat_history)
+    st.sidebar.button('Clear Chat History', on_click = clear_chat_history)
 
     #Function for generating LLaMA2 response.
     def generate_llama2_response(prompt_input):
